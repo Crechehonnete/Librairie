@@ -10,7 +10,8 @@ export default {
     colors: {
       
       'pain':"#DECAAC",
-      'white':"#EEEEEE",
+          'white': '#ffffff',
+      'gray-white':"#EEEEEE",
       'blue':"#26367E",
       'fblue': '#312e81',
 

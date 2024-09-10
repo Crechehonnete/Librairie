@@ -40,17 +40,19 @@ const dedans = ()=>{
 </script>
 
 <template>
-  <header class="bg-white">
-    <section class=" w-full bg-blue ">
+  <header class="bg-gray-white">
+    <section class=" w-full bg-blue py-5">
       <div class="justify-between flex px-4 w-full ">
-        <div class="w-[60%] flex flex-row px-2 py-2 ">
-          <Lang_Devise :langues="languages" :monnaies="monnaies"> </Lang_Devise>
+        <div class="w-[60%] flex flex-row px-2 py-2 border ">
+          <Lang_Devise :langues="languages" :monnaies="monnaies" class="bg-pain"> </Lang_Devise>
         </div>
 
-        <div class="w-[15%] mt-4 border border-green-500 gap-x-4">
-         <button class="btn"><RouterLink to="/connexion">Connexion</RouterLink> </button>
-         <button class="btn">S'inscrire</button>
+        <div class="w-[30%] ">
 
+          <div class="inline-flex bg-gray-white  space-x-2 py-1 px-1 border border-gray-white w-full rounded-full  justify-end">
+            <input type="mail" class="border border-blue rounded-full px-2 w-[70%] focus:outline-none" placeholder="Entrez votre mail">
+            <button class="btn rounded-full bg-pain">commencez</button>
+        </div>
         </div>
       </div>
     </section>
@@ -164,7 +166,7 @@ const dedans = ()=>{
 
     <section>
 
-      <div class=" flex flex-row bg-black h-10 w-full  ">
+      <div class=" flex flex-row bg-blue h-10 w-full  ">
         <div class="   w-[20%]  h-full text-right pl-8">
           <div class="flex flex-row justify-center bg-amber-500/80 w-[100%] space-x-20 text-left">
           <span class=" w-[40%] h-full   font-semibold text-white ">
