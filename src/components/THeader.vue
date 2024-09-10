@@ -3,6 +3,7 @@ import { ref } from "vue";
 import MenuCategories from "./MenuCategories.vue";
 import TMain from "./TMain.vue";
 import Lang_Devise from "../components/Lang_Devise.vue";
+import { RouterLink, RouterView } from "vue-router";
 
 const active = ref(false);
 
@@ -39,22 +40,22 @@ const dedans = ()=>{
 </script>
 
 <template>
-  <header class="">
-    <section class="bg-retro w-full bg-amber-600/80 ">
+  <header class="bg-white">
+    <section class=" w-full bg-blue ">
       <div class="justify-between flex px-4 w-full ">
         <div class="w-[60%] flex flex-row px-2 py-2 ">
           <Lang_Devise :langues="languages" :monnaies="monnaies"> </Lang_Devise>
         </div>
 
         <div class="w-[15%] mt-4 border border-green-500 gap-x-4">
-         <button class="btn">Connexion</button>
+         <button class="btn"><RouterLink to="/connexion">Connexion</RouterLink> </button>
          <button class="btn">S'inscrire</button>
 
         </div>
       </div>
     </section>
 
-    <section class="bg-white">
+    <section>
       <div class="px-8">
         <div
           class="flex flex-row justify-center text-center items-center mx-auto   gap-x-40"
@@ -186,7 +187,7 @@ const dedans = ()=>{
         <div class="w-[70%] h-full text-white items-center  justify-center ">
           <nav class=" p-1 h-full border">
             <ul class="flex flex-wrap h-[100%] text-center justify-center space-x-14  ">
-              <li @mouseover="dedans" class="px-8 py-1  hover:bg-amber-500/80 active:bg-amber-500/90 "><a href="">LIVRES</a></li>
+              <li class="px-8 py-1  hover:bg-amber-500/80 active:bg-amber-500/90 "><a href="">LIVRES</a></li>
               <li class="px-8  py-1 hover:bg-amber-500/80 active:bg-amber-500/90"><a href="">ACCUEIL</a></li>
               <li class="px-8  py-1  hover:bg-amber-500/80 active:bg-amber-500/90"><a href="">LIVRAISON</a></li>
               <li class="px-8  py-1  hover:bg-amber-500/80 active:bg-amber-500/90"><a href="">A PROPOS</a></li>

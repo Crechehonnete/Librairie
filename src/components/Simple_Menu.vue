@@ -9,12 +9,12 @@
             </div>
           
         <div v-show="active1">
-            <tr><td>Roman</td></tr>
-            <tr><td>Science-fiction</td></tr>
-            <tr><td>Fantaisy</td></tr>
-            <tr><td>Thriller</td></tr>
-            <tr><td>Romance</td></tr>
-            <tr><td>Littérature contemporaine</td></tr>
+            <li>Roman</li>
+            <li>Science-fiction</li>
+            <li>Fantaisy</li>
+            <li>Thriller</li>
+            <li>Romance</li>
+            <li>Littérature contemporaine</li>
           </div>
          </div>
 
@@ -26,11 +26,11 @@
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
             </div>
          <div v-show="active2">
-            <tr><td>Biograpgie</td></tr>
-            <tr><td>Essai</td></tr>
-            <tr><td>Documentaire</td></tr>
-            <tr><td>Autobiographie</td></tr>
-            <tr><td>Mémoires</td></tr>
+            <li>Biograpgie</li>
+            <li>Essai</li>
+            <li>Documentaire</li>
+            <li>Autobiographie</li>
+            <li>Mémoires</li>
           </div>
         </div>
 
@@ -41,9 +41,9 @@
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
          
         <div v-show="active3">
-            <tr><td>Albums illustrés</td></tr>
-            <tr><td>Romans pour enfant</td></tr>
-            <tr><td>Young adult</td></tr>
+            <li>Albums illusliés</li>
+            <li>Romans pour enfant</li>
+            <li>Young adult</li>
           </div>
         </div>
        
@@ -52,9 +52,9 @@
         <div class="flex  justify-between  w-full">    <li>Poésie</li>
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
         <div v-show="active4">
-            <tr><td>Poésie classique</td></tr>
-            <tr><td>Poésie contemporaine</td></tr>
-            <tr><td>Anthologies</td></tr>
+            <li>Poésie classique<</li>
+            <li>Poésie contemporaine</li>
+            <li>Anthologies</li>
           </div>
         </div>
 
@@ -65,9 +65,9 @@
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
           
          <div v-show="active5">
-            <tr><td>Monologue</td></tr>
-            <tr><td>Pièce de théâtre</td></tr>
-            <tr><td>Comédies</td></tr>
+            <li>Monologue</li>
+            <li>Pièce de théâlie</li>
+            <li>Comédies</li>
           </div>
         </div>
 
@@ -77,9 +77,9 @@
         <div class="flex  justify-between  w-full">   <li>Essais critiques</li>
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
         <div v-show="active6">
-            <tr><td>Critiques littéraires</td></tr>
-            <tr><td>Critiques philosophiques</td></tr> 
-            <tr><td>Essais philosophiques</td></tr>
+            <li>Critiques littéraires</li>
+            <li>Critiques philosophiques</li> 
+            <li>Essais philosophiques</li>
           </div>
         </div>
 
@@ -90,9 +90,9 @@
           <svg class="flex justify-end" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
 
         <div v-show="active7">
-            <tr><td>Livres de cuisine</td></tr>
-            <tr><td>Mauesl scolaires</td></tr>
-            <tr><td>Guides voyages</td></tr>
+            <li>Livres de cuisine</li>
+            <li>Mannuels scolaires</li>
+            <li>Guides voyages</li>
           </div>
         </div>
 

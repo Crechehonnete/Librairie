@@ -1,7 +1,9 @@
 <template>
-    <div class="S">
+    <div>
     <TMain></TMain>
 </div>
+
+
 
 </template>
 

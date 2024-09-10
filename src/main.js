@@ -4,5 +4,10 @@ import App from './App.vue'
 import "aos/dist/aos.css"
 
 
+import router from './ROUTES'
 
- createApp(App).mount('#app');
+ const app = createApp(App)
+ app.use(router)
+ 
+ app.mount('#app');
+ 

@@ -7,6 +7,14 @@ export default {
    
   ],
   theme: {
+    colors: {
+      
+      'pain':"#DECAAC",
+      'white':"#EEEEEE",
+      'blue':"#26367E",
+      'fblue': '#312e81',
+
+    },
     extend: {},
   },
   plugins: [
@@ -14,43 +22,6 @@ export default {
     require('daisyui'),
     
   ],
-
-  daisyui: {
-    themes: [
-      "light",
-      "dark",
-      "cupcake",
-      "bumblebee",
-      "emerald",
-      "corporate",
-      "synthwave",
-      "retro",
-      "cyberpunk",
-      "valentine",
-      "halloween",
-      "garden",
-      "forest",
-      "aqua",
-      "lofi",
-      "pastel",
-      "fantasy",
-      "wireframe",
-      "black",
-      "luxury",
-      "dracula",
-      "cmyk",
-      "autumn",
-      "business",
-      "acid",
-      "lemonade",
-      "night",
-      "coffee",
-      "winter",
-      "dim",
-      "nord",
-      "sunset",
-    ],
-  },
 
 }
 

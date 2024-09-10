@@ -1,19 +1,15 @@
 <script setup>
 import THeader from './components/THeader.vue';
 import TFooter from './components/TFooter.vue';
-import Connexion from './Pages/Connexion.vue';
 
-
-
-
-
-
-
+import { RouterView } from 'vue-router';
 
 import {onMounted} from "vue";
-
 import AOS from "aos"
-import Accueil from './Pages/Accueil.vue';
+
+
+
+
 
 onMounted( async()=> {
   AOS.init();
@@ -24,8 +20,8 @@ onMounted( async()=> {
 <template>
 
   <THeader> </THeader> 
+  <RouterView></RouterView>
 
-  <Accueil></Accueil>
   <TFooter> </TFooter> 
   
 
