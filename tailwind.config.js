@@ -7,17 +7,9 @@ export default {
    
   ],
   theme: {
-    colors: {
-      
-      'pain':"#DECAAC",
-          'white': '#ffffff',
-      'gray-white':"#EEEEEE",
-      'blue':"#26367E",
-      'fblue': '#312e81',
-      'black':"#030712"
-
-    },
-    extend: {},
+    extend: {
+     
+    }
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),

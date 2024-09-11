@@ -133,7 +133,6 @@ onMounted(() => {
 
 
   
-console.log(direction.value);
 });
 
 

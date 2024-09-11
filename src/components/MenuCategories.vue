@@ -8,34 +8,14 @@
       <span
         @mouseover=" ouverture_auto"
         type="button"
-        class="inline-flex w-full justify-center gap-x-1.5 rounded-none  border-none px-3 py-[9%] text-sm font-semibold text-gray-900"
+        class="inline-flex  justify-center  rounded-none    py-[9%] text-sm font-semibold text-gray-900"
         id="menu-button"
         aria-expanded="true"
         aria-haspopup="true"
       >
         Categories
-        <svg
-          v-show="show_categories == false"
-          class="inline"
-          xmlns="http://www.w3.org/2000/svg"
-          height="24px"
-          viewBox="0 -960 960 960"
-          width="24px"
-          fill="#5f6368"
-        >
-          <path d="M480-345 240-585l56-56 184 183 184-183 56 56-240 240Z" />
-        </svg>
+       
 
-        <svg
-          v-show="show_categories == true"
-          xmlns="http://www.w3.org/2000/svg"
-          height="24px"
-          viewBox="0 -960 960 960"
-          width="24px"
-          fill="#5f6368"
-        >
-          <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z" />
-        </svg>
       </span>
     </div>
 

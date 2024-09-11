@@ -2,7 +2,7 @@
   <div class="py-2">
        <ul class="space-y-8">
 
-        <div  class="flex flex-row p-3  bg-pain   font-semibold shadow-lg" >
+        <div  class="flex flex-row p-3  bg-pain   font-semibold shadow-md shadow-gray-400" >
           <div class="flex w-full  justify-between">
              <li> Fiction </li>
              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
@@ -20,7 +20,7 @@
 
 
        
-         <div class="flex flex-row p-3 bg-pain font-semibold shadow-lg" >
+         <div class="flex flex-row p-3 bg-pain font-semibold shadow-md shadow-gray-400" >
           <div class="flex w-full  justify-between">
               <li>Non-Fiction</li>
               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
@@ -36,7 +36,7 @@
 
 
 
-          <div class="flex flex-row p-3 bg-pain  font-semibold shadow-lg ">
+          <div class="flex flex-row p-3 bg-pain  font-semibold shadow-md shadow-gray-400 ">
           <div class="flex w-full  justify-between">  <li>Littéerature jeunesse</li>
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
          
@@ -48,7 +48,7 @@
         </div>
        
 
-        <div class="flex flex-row p-3 bg-pain  font-semibold shadow-lg" >
+        <div class="flex flex-row p-3 bg-pain  font-semibold shadow-md shadow-gray-400" >
         <div class="flex  justify-between  w-full">    <li>Poésie</li>
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
         <div v-show="active4">
@@ -60,7 +60,7 @@
 
 
 
-        <div class="flex flex-row p-3 bg-pain  font-semibold shadow-lg" >
+        <div class="flex flex-row p-3 bg-pain  font-semibold shadow-md shadow-gray-400" >
         <div class="flex  justify-between w-full">   <li>Théâtre</li>
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
           
@@ -73,7 +73,7 @@
 
 
 
-        <div class=" flex flex-row p-3 bg-pain  font-semibold shadow-lg" >
+        <div class=" flex flex-row p-3 bg-pain  font-semibold shadow-md shadow-gray-400" >
         <div class="flex  justify-between  w-full">   <li>Essais critiques</li>
           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
         <div v-show="active6">
@@ -85,7 +85,7 @@
 
 
 
-        <div class="flex flex-row p-3 bg-pain  font-semibold shadow-lg ">
+        <div class="flex flex-row p-3 bg-pain  font-semibold shadow-md shadow-gray-400 ">
         <div class="flex justify-between  w-full" >   <li>Manuels et Guides</li>
           <svg class="flex justify-end" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg></div>
 

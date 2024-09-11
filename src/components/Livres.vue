@@ -56,10 +56,8 @@ const props = defineProps({
 
 
 const bloc_livre = ref(null);
-console.log(bloc_livre.value);
 
 const visualisation = ()=>{
-  console.log("fermé");
   livre.Classname.add = translate-y-8
 }
 

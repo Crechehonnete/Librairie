@@ -3,7 +3,7 @@
 
       
         <div>
-          <select class="select w-32 border-none focus:outline-none bg-amber-200/90 hover:font-semibold lg:text-lg ">
+          <select class="select w-24 border-none focus:outline-none bg-white hover:font-semibold text-sm  font-semibold">
             <option v-for="(item,i) in langues" :key="i" :value="item.value">{{item.langue}}</option>
           </select>
         </div>
@@ -11,7 +11,7 @@
         
       
         <div>
-          <select class="select w-32 border-none focus:outline-none bg-amber-200/90 hover:font-semibold lg:text-lg">
+          <select class="select w-24 border-none focus:outline-none bg-white hover:font-semibold text-sm font-semibold">
             <option v-for="(item, i) in monnaies" :key="i" :value="item.value">{{item.monnaie}}</option>
         
           </select>
@@ -31,7 +31,6 @@ const props = defineProps({
     Required:true
 });
 
-console.log(props.value);
 </script>
 
 <style scoped>

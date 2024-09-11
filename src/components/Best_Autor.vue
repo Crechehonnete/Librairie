@@ -4,7 +4,7 @@
         <div class="">
           
       
-    <div class="bg-gray-white   py-12 space-y-16  mx-auto overflow-hidden lg:px-16 ">
+    <div class="bg-slate-300   py-12 space-y-16  mx-auto overflow-hidden lg:px-16 ">
       <div class="flex flex-row px-2 justify-between space-x-4 text-center  lg:px-14 md:px-12" >
 
 

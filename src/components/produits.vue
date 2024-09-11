@@ -1,34 +1,35 @@
 <template>
-    <div class="h-[600px] px-4">
+    <div class="h-[500px] px-4">
+        <h3 class="text-center text-xl font-bold">Récents</h3>
         <div class="relative h-[400px]  text-center flex justify-center bg-white space-x-4 px-2 py-28">
-            <button @click="previous" :disabled="currentPage === 0" class="bg-blue text-white text-center cursor-pointer  px-2 h-12 mt-24">Previous
-                <svg    class="fill-current hover:-translate-x-4 ml-2"
-                xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+            <button @click="previous"  :disabled="currentPage === 0" class="bg-sky-600 text-white text-center cursor-pointer  px-2 h-12 mt-24">Previous
+                <svg    :class="{'-translate-x-4': isTranslated2}"
+                xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff">
                     <path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/>
                 </svg>
             </button>
 
             <template v-for="(product, i) in visibleProducts" :key="i">
 
-                <div class="border border-pain w-[20%] h-[250px] flex-col flex justify-center py-1">
-                    <div class=" h-[50%] mx-auto bg-white px-2 -translate-y-12">
-                        <img :src="product.img" alt="" class="h-full">
+                <div class="border border-slate-600 w-[20%] h-[250px] flex-col flex justify-center py-1">
+                    <div class=" h-[60%] w-[60%]  mx-auto bg-white px-2 -translate-y-12">
+                        <img :src="product.img" alt="" class="h-full w-full">
                     </div>
                     <div class="h-[60%] text-center">
                         <h2 class="text-xl font-bold">{{ product.title }}</h2><br>
-                        <p>{{ product.description }}</p>
+                        <p class=" text-gray-400">{{ product.description }}</p>
                         <a href="#" class="text-blue-500" :link="product.link"></a>
                     </div>
                 </div>
             </template>
-            <button @click="next" :disabled="currentPage >= maxPage" class="bg-blue text-white px-4  h-12 mt-24">Next
+            <button @click="next" :disabled="currentPage >= maxPage" class="bg-sky-600 text-white px-4  h-12 mt-24">Next
                 <svg 
-                class="fill-current hover:translate-x-4"
+                :class=" {'translate-x-4':isTranslated1}"
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
                   viewBox="0 -960 960 960"
                   width="24px"
-                  fill="#5f6368"
+                  fill="#ffffff"
                 >
                   <path
                     d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z"
@@ -69,24 +70,44 @@ const produits = [
 const currentPage = ref(0);
 const itemsPerPage = 5;
 const maxPage = Math.ceil(produits.length / itemsPerPage) - 1;
-console.log(produits.length)
 
 const visibleProducts = computed(() => {
     const start = currentPage.value * itemsPerPage;
     return produits.slice(start, start + itemsPerPage);
 });
 
+
+const isTranslated1 = ref(false);
 function next() {
     if (currentPage.value < maxPage) {
+        isTranslated1.value = !isTranslated1.value;
+    setTimeout(() => {
+    isTranslated1.value = !isTranslated1.value;
+        
+    },200 );
+
         currentPage.value++;
+
+
     }
 }
 
+const isTranslated2 = ref(false);
 function previous() {
     if (currentPage.value > 0) {
+    isTranslated2.value = !isTranslated2.value;
+    setTimeout(() => {
+    isTranslated2.value = !isTranslated2.value;
+        
+    },200 );
+
         currentPage.value--;
     }
 }
+
+
+
+
 </script>
 
 <style scoped>
