@@ -1,6 +1,13 @@
 <template>
     <div class="h-[600px] px-4">
-        <div class="relative h-[400px]  flex justify-center bg-white space-x-4 px-2 py-28">
+        <div class="relative h-[400px]  text-center flex justify-center bg-white space-x-4 px-2 py-28">
+            <button @click="previous" :disabled="currentPage === 0" class="bg-blue text-white text-center cursor-pointer  px-2 h-12 mt-24">Previous
+                <svg    class="fill-current hover:-translate-x-4 ml-2"
+                xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                    <path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/>
+                </svg>
+            </button>
+
             <template v-for="(product, i) in visibleProducts" :key="i">
 
                 <div class="border border-pain w-[20%] h-[250px] flex-col flex justify-center py-1">
@@ -14,11 +21,21 @@
                     </div>
                 </div>
             </template>
-        </div>
-        
-        <div class="flex justify-between mt-4">
-            <button @click="previous" :disabled="currentPage === 0" class="bg-blue text-white px-4 py-2">Previous</button>
-            <button @click="next" :disabled="currentPage >= maxPage" class="bg-blue text-white px-4 py-2">Next</button>
+            <button @click="next" :disabled="currentPage >= maxPage" class="bg-blue text-white px-4  h-12 mt-24">Next
+                <svg 
+                class="fill-current hover:translate-x-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#5f6368"
+                >
+                  <path
+                    d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z"
+                  />
+                </svg>
+            </button>
+          
         </div>
     </div>
 </template>
