@@ -53,7 +53,7 @@
     expo_livres: Array,
     required: true,
   });
-  
+  /*
   onMounted(()=>{
     const translateY = 0;
     const translateYMax = -8;
@@ -70,7 +70,7 @@
         livre.value.style.transform = `translateY(${translateYMin}px)`;
       }
     });
-  })
+  })*/
   
   
   </script>

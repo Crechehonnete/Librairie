@@ -5,7 +5,7 @@
     
     <div class="flex flex-row  ">
      
-      <div class="h-full py-8 w-[20%] border-2 border-black pl-8 bg-amber-500/80 space-y-32">
+      <div class="h-full py-8 w-[20%] border-2 border-black pl-8 bg-gray-white space-y-32">
         <div class="h-[50%]  overflow-hidden ">
          
 <Simple_Menu></Simple_Menu>

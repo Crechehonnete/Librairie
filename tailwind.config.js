@@ -14,6 +14,7 @@ export default {
       'gray-white':"#EEEEEE",
       'blue':"#26367E",
       'fblue': '#312e81',
+      'black':"#030712"
 
     },
     extend: {},

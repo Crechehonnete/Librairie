@@ -40,16 +40,16 @@ const dedans = ()=>{
 </script>
 
 <template>
-  <header class="bg-gray-white">
-    <section class=" w-full bg-blue py-5">
+  <header >
+    <section class=" w-full bg-black py-5">
       <div class="justify-between flex px-4 w-full ">
-        <div class="w-[60%] flex flex-row px-2 py-2 border ">
-          <Lang_Devise :langues="languages" :monnaies="monnaies" class="bg-pain"> </Lang_Devise>
+        <div class="w-[60%] flex flex-row px-2 py-2  ">
+          <Lang_Devise :langues="languages" :monnaies="monnaies" > </Lang_Devise>
         </div>
 
         <div class="w-[30%] ">
 
-          <div class="inline-flex bg-gray-white  space-x-2 py-1 px-1 border border-gray-white w-full rounded-full  justify-end">
+          <div class="inline-flex bg-gray-white  space-x-2 py-1 px-1 border border-gray-white w-full rounded-full  justify-between">
             <input type="mail" class="border border-blue rounded-full px-2 w-[70%] focus:outline-none" placeholder="Entrez votre mail">
             <button class="btn rounded-full bg-pain">commencez</button>
         </div>
@@ -72,7 +72,7 @@ const dedans = ()=>{
             </button>
 
             <label
-              class="input input-bordered border-4 border-x-0  rounded-none bg-white flex items-center gap-2 w-[80%]"
+              class="input input-bordered border-4 border-black border-x-0  rounded-none bg-white flex items-center gap-2 w-[80%]"
             >
               <input
                 type="search"
@@ -94,7 +94,7 @@ const dedans = ()=>{
               </svg>
             </label>
 
-            <button class="btn btn-xs border-l-none rounded-none sm:btn-sm md:btn-md lg:w-[20%] bg-amber-600/90 ">
+            <button class="btn btn-xs  border-l-none  border-pain rounded-none sm:btn-sm md:btn-md lg:w-[20%] bg-pain ">
               Recherchez
             </button>
           </div>
@@ -112,7 +112,7 @@ const dedans = ()=>{
                   class="border border-black rounded-full py-4 text-center justify-center items-center  h-16 w-16  hover:text-black hover:bg-accent active:text-black active:bg-accent overflow-hidden"
                 >
                      <svg
-                    class="flex flex-row overflow-hidden fill-current mx-auto my-auto hover:translate-y-8  "
+                    class="flex flex-row overflow-hidden fill-current mx-auto my-auto hover:translate-y-12  "
                     xmlns="http://www.w3.org/2000/svg"
                     height="30px"
                     viewBox="0 -960 960 960"
@@ -166,7 +166,7 @@ const dedans = ()=>{
 
     <section>
 
-      <div class=" flex flex-row bg-blue h-10 w-full  ">
+      <div class=" flex flex-row bg-black h-10 w-full  ">
         <div class="   w-[20%]  h-full text-right pl-8">
           <div class="flex flex-row justify-center bg-amber-500/80 w-[100%] space-x-20 text-left">
           <span class=" w-[40%] h-full   font-semibold text-white ">
