@@ -40,7 +40,7 @@ const dedans = ()=>{
 
 <template>
   <header >
-    <section class=" w-full bg-slate-300 py-5">
+    <section class=" w-full bg-sky-900 py-5">
       <div class="justify-between flex px-4 w-full ">
         <div class="w-[60%] flex flex-row px-2 py-2  ">
           <Lang_Devise :langues="languages" :monnaies="monnaies" > </Lang_Devise>
@@ -49,7 +49,7 @@ const dedans = ()=>{
         <div class="w-[30%] ">
 
           <div class="inline-flex bg-white  space-x-2 py-1 px-1 border border-gray-white w-full rounded-full  justify-between">
-            <input type="mail" class="border border-blue-500 rounded-full px-2 w-[70%] focus:outline-none" placeholder="Entrez votre mail">
+            <input type="mail" class="border border-sky-500 rounded-full px-2 w-[70%] focus:outline-none" placeholder="Entrez votre mail">
               <RouterLink to="/connexion">
                 <button class="btn rounded-full bg-sky-400">commencez</button>
               </RouterLink>
@@ -166,7 +166,7 @@ const dedans = ()=>{
                 </div>
                 <div class="w-[40%] text-sm">
                   <p class="text-left mt-2">Chariot</p>
-                  <p class="text-left font-bold">0 articles</p>
+                  <p class="text-left lg:w-[70px] flex flex-row font-bold ">0 articles</p>
                 </div>
               </div>
             
@@ -177,7 +177,7 @@ const dedans = ()=>{
 
     <section>
 
-      <div class=" flex flex-row  h-10 w-full  bg-gradient-to-r from-sky-700 from-80% to-white ">
+      <div class=" flex flex-row  h-10 w-full  bg-gradient-to-r from-sky-700 from-80% to-sky-900 ">
         <div class="   w-[20%]  h-full text-right pl-8">
           <div class="flex flex-row justify-center bg-sky-700 w-[100%] space-x-20 text-left">
           <span class=" w-[40%] h-full   font-semibold text-white mt-2">
@@ -198,7 +198,7 @@ const dedans = ()=>{
         </div>
   
         <div class="w-[70%] h-full text-white items-center  justify-center ">
-          <nav class=" p-1 h-full border">
+          <nav class=" p-1 h-full ">
             <ul class="flex flex-wrap h-[100%] text-center justify-center space-x-14  ">
               <li class="px-8 py-1  hover:bg-white hover:text-black hover:font-semibold active:bg-white "><a href="">LIVRES</a></li>
               <RouterLink to="/"><li class="px-8  py-1 hover:bg-white hover:text-black hover:font-semibold active:bg-white">ACCUEIL</li></RouterLink>

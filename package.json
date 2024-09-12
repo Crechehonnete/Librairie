@@ -13,6 +13,7 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "aos": "^2.3.4",
     "aspect-ratio": "^2.1.5",
+    "gsap": "^3.12.5",
     "import": "^0.0.6",
     "ui": "^0.2.4",
     "vue": "^3.5.4",
